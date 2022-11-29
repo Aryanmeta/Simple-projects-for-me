@@ -1,10 +1,10 @@
-def fibo_list(max):
-    nums = []
-    a , b = 0 , 1
-    while len(nums) <= max:
-        nums.append(b)
-        a , b = b, a + b
-    return nums
+# def fibo_list(max):
+#     nums = []
+#     a , b = 0 , 1
+#     while len(nums) <= max:
+#         nums.append(b)
+#         a , b = b, a + b
+#     return nums
 
 
 # Generator
@@ -19,5 +19,5 @@ def fibo_generator(max):
         yield y
         count += 1
 
-for num in fibo_generator(100000000):
+for num in fibo_generator(8):
     print(num)
